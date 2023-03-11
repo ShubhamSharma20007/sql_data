@@ -107,8 +107,14 @@ st.markdown("--")
 #
 # Adding title
 #    plt.title("Top 5 Small Duration Call's",fontsize=6)
- #   st.pyplot(figure)
+#   st.pyplot(figure)
+###  Dataframe
+st.subheader("DataFrame")
+dataframe['Date'] = dataframe['Date'].dt.date
+st.dataframe(dataframe)
 
+    
+  
 watermark = """
 <style>
 #mainmenu {visibility :hidden;}
