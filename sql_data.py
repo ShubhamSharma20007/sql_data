@@ -19,7 +19,7 @@ st.set_page_config(page_title="Daily Report",layout='wide',page_icon=image)
 ############## import the datasets ###########
 @st.cache_data
 def extract_data():
-    file_name = r"D:\Machine Learning\techno_data\sql_data.xlsx"
+    file_name = r"sql_data.xlsx"
     df = pd.read_excel(io=file_name)
 
     return df
