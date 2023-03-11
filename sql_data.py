@@ -93,21 +93,21 @@ st.markdown("--")
 
 ###  Creating top 5 highest call
 
-high_call = dataframe2['Total Calll'].sort_values(ascending=False).reset_index(drop=True).astype(int).nsmallest(n=5,keep="first")
-first_col, second_col, third_col= st.columns(3)
-with first_col:
-    pass
-with second_col:
-    figure = plt.figure(figsize=(2,2))
-    plt.tight_layout()
-    colors = ( "orange", "cyan", "brown",
-              "grey", "indigo", "beige")
-    explode = (0.03, 0.03, 0.03, 0.03, 0.03)
-    plot = plt.pie(high_call,labels=high_call,colors=colors,explode=explode,textprops={'fontsize':5})
-
+#high_call = dataframe2['Total Calll'].sort_values(ascending=False).reset_index(drop=True).astype(int).nsmallest(n=5,keep="first")
+#first_col, second_col, third_col= st.columns(3)
+#with first_col:
+#    pass
+#with second_col:
+#    figure = plt.figure(figsize=(2,2))
+#    plt.tight_layout()
+#    colors = ( "orange", "cyan", "brown",
+#             "grey", "indigo", "beige")
+#    explode = (0.03, 0.03, 0.03, 0.03, 0.03)
+#   plot = plt.pie(high_call,labels=high_call,colors=colors,explode=explode,textprops={'fontsize':5})
+#
 # Adding title
-    plt.title("Top 5 Small Duration Call's",fontsize=6)
-    st.pyplot(figure)
+#    plt.title("Top 5 Small Duration Call's",fontsize=6)
+ #   st.pyplot(figure)
 
 watermark = """
 <style>
